@@ -69,7 +69,7 @@ class Person:
             i += 1
 
     def choose_item(self):
-        i =1
+        i = 1
 
         print("\n" + bcolors.OKGREEN + bcolors.BOLD + "ITEMS" + bcolors.ENDC)
         for item in self.items:
