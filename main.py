@@ -2,20 +2,7 @@ from classes.game import Person, bcolors
 from classes.magic import Spell
 from classes.inventory import Item
 
-# print("\n\n")
-# print("NAME                HP                                  MP")
-# print("                   ________________________            __________")
-# print(bcolors.BOLD + "Valos:    " +
-#       "460/460 |" + bcolors.OKGREEN + "███████████             " + bcolors.ENDC + bcolors.BOLD + "|    " +
-#       "65/65 |" + bcolors.OKBLUE + "██████████" + bcolors.ENDC + "|")
-#
-# print("                    ________________________            __________")
-# print("Valos:     460/460 |                        |    65/65 |          |")
-#
-# print("                    ________________________            __________")
-# print("Valos:     460/460 |                        |    65/65 |          |")
-#
-# print("\n\n")
+
 # Create Black Magic
 fire = Spell("Fire", 25, 600, "black")
 thunder = Spell("Thunder", 25, 600, "black")
@@ -133,9 +120,6 @@ while running:
 
     print('----------------------------------')
     print('Enemy HP', bcolors.FAIL + str(enemy.get_hp()) + '/' + str(enemy.get_max_hp()) + bcolors.ENDC)
-
-    # print('Your HP:', bcolors.OKGREEN + str(player.get_hp()), '/' + str(player.get_max_hp()) + bcolors.ENDC)
-    # print('Your MP:', bcolors.OKBLUE + str(player.get_mp()), '/' + str(player.get_max_mp()) + bcolors.ENDC)
 
     if enemy.get_hp() == 0:
         print(bcolors.OKGREEN + "YOU WIN!" + bcolors.ENDC)
