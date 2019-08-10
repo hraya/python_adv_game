@@ -34,7 +34,9 @@ player_items = [{"item": potion, "quantity": 15}, {"item": hipotion, "quantity":
 player1 = Person("Valos:", 3260, 132, 300, 34, player_spells, player_items)
 player2 = Person("Nick :", 4160, 188, 311, 34, player_spells, player_items)
 player3 = Person("Robot:", 3089, 174, 288, 34, player_spells, player_items)
+
 enemy = Person("Magus", 11200, 701, 525, 25, [], [])
+enemy2 = Person("Imp", 1250, 130, 560, 325, []. [])
 
 players = [player1, player2, player3]
 
